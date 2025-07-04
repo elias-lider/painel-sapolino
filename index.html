@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Painel Facção PCC</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="login-container" id="login-panel">
+    <h1>Painel PCC</h1>
+    <input type="text" id="username" placeholder="Usuário" />
+    <input type="password" id="password" placeholder="Senha" />
+    <button onclick="login()">Entrar</button>
+    <p id="message"></p>
+  </div>
+
+  <div class="dashboard-container" id="dashboard" style="display:none;">
+    <h1>Bem-vindo ao PCC</h1>
+    <p><strong>ID:</strong> <span id="user-id"></span></p>
+    <p><strong>Usuário:</strong> <span id="user-name"></span></p>
+    <p><strong>Status:</strong> <span id="user-status">Membro do PCC</span></p>
+
+    <h2>Membros da Facção</h2>
+    <ul id="member-list"></ul>
+
+    <button onclick="logout()">Sair</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
